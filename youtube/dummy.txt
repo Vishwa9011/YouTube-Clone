@@ -1,0 +1,15 @@
+
+yt logo = https://developers.google.com/site-assets/logo-youtube.svg
+
+
+https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&key=AIzaSyAmhlT7sV-OBZvRBG8xjUGskT3esj0mc3k&channelId=UCGmYu21PtkSONsbbiBXAaPg
+AIzaSyB_b8Br7u1mI3f3o_w7UIOAxUGGJIGx9-c
+
+
+https://youtube.googleapis.com/youtube/v3/search?part=contentDetails&maxResults=10&key=AIzaSyAmhlT7sV-OBZvRBG8xjUGskT3esj0mc3k&channelId=UCGmYu21PtkSONsbbiBXAaPg
+
+url for authentication => https://masai-api-mocker.herokuapp.com/
+
+
+apikey  = AIzaSyB_b8Br7u1mI3f3o_w7UIOAxUGGJIGx9-c
+apikey2 = AIzaSyAmhlT7sV-OBZvRBG8xjUGskT3esj0mc3k

@@ -1,0 +1,180 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background: #202020;
+}
+
+#navbar {
+     /* border: 1px solid white; */
+     width: 100%;
+     height: 60px;
+     position: sticky;
+     top: 0;
+     left: 0;
+     z-index: 999;
+     display: flex;
+     background: #202020;
+}
+
+.nav-container {
+     width: 96%;
+     height: 100%;
+     margin: auto;
+     display: flex;
+     justify-content: space-between;
+}
+
+.nav-left, .header {
+     /* border: 1px solid white; */
+     width: 13%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.hamberger {
+     width: 20px;
+     height: 15px;
+     position: relative;
+     cursor: pointer;
+}
+
+.hamberger span {
+     width: 20px;
+     height: 2px;
+     top: 50%;
+     transform: translateY(-50%);
+     position: absolute;
+     background: #ffffff;
+}
+
+.hamberger span:first-child {
+     top: 0;
+}
+
+.hamberger span:last-child {
+     top: 100%;
+}
+
+.yt-logo {
+     margin-left: 10px;
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+
+.yt-logo img {
+     cursor: pointer;
+     width: 120px;
+}
+
+.nav-mid {
+     /* border: 1px solid white; */
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.search-box {
+     width: 85%;
+     height: fit-content;
+     display: flex;
+     justify-content: space-between;
+     padding: 1px;
+     align-items: center;
+     background-color: #313131;
+     /* border: 1px solid red; */
+}
+
+.search-box .input-box {
+     width: 90%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.input-box input {
+     width: 100%;
+     padding: 10px 8px;
+     font-size: 17px;
+     color: #ffffff;
+     background: #121212;
+     border: none;
+     outline: none;
+}
+
+.search-icon {
+     width: 10%;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-self: center;
+     color: white;
+}
+
+.mic {
+     color: white;
+     background: #181818;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 10px;
+}
+
+/* Nav-right */
+
+.nav-right {
+     width: 11%;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.nav-right .material-symbols-outlined {
+     font-variation-settings:
+          'FILL'0,
+          'wght'400,
+          'GRAD'0,
+          'opsz'48
+}
+
+.nav-right span {
+     cursor: pointer;
+}
+
+.nav-right img {
+     width: 37px;
+     cursor: pointer;
+     height: 37px;
+     border-radius: 50%;
+}
+
+.user-logo {
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     overflow: hidden;
+     font-size: 12px;
+}
+
+.username {
+     text-align: center;
+     white-space: break-spaces;
+     display: none;
+}
+
+.toggle-logo-size img {
+     width: 25%;
+     height: 25%;
+}

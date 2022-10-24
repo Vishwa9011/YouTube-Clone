@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YouTube-SignUp</title>
+		<link rel="stylesheet" href="./styles/signUp.css">
+		<link rel="icon" type="image/x-icon" href="https://developers.google.com/site-assets/logo-youtube.svg" />
+	</head>
+
+
+
+	<body>
+		<div id="container">
+			<div id="register-form">
+				<h1>Register</h1>
+				<form id="form">
+					<input type="text" required id="name" placeholder="Name" />
+					<input type="text" required id="email" placeholder="Email" />
+					<input type="text" required id="username" placeholder="Username" />
+					<input type="text" required id="password" placeholder="Password" />
+					<input type="text" required id="mobile" placeholder="Mobile" />
+					<input type="text" required id="description" placeholder="Description" />
+				</form>
+
+				<button onclick="Register()">Register</button>
+				<div>
+					OR
+				</div>
+				<button class="login-btn">Login</button>
+			</div>
+			<!--  -->
+			<div id="loader">
+				<img src="./images/Eclipse-0.9s-191px (2).gif" alt="">
+			</div>
+			<!--  -->
+			<div id="login-form">
+				<h1>Login</h1>
+				<form id="formLogin">
+					<input type="text" id="login_username" placeholder="Username" />
+					<input type="text" id="login_password" placeholder="Password" />
+				</form>
+				<button onclick="Login()">Login</button>
+				<div>OR</div>
+				<button class="signUp-btn">Sign Up</button>
+			</div>
+		</div>
+
+		<script src="./scripts/login.js"></script>
+	</body>
+
+</html>

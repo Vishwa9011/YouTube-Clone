@@ -1,0 +1,347 @@
+body {
+     font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#main {
+     width: 100%;
+     display: flex;
+     position: relative;
+}
+
+.side-menubar .material-symbols-outlined, .side-nav-setting .material-symbols-outlined, .vedio-more-datails .material-symbols-outlined {
+     font-variation-settings:
+          'FILL'0,
+          'wght'300,
+          'GRAD'0,
+          'opsz'48
+}
+
+.side-menubar div:first-child .material-symbols-outlined {
+     font-variation-settings:
+          'FILL'1,
+          'wght'400,
+          'GRAD'0,
+          'opsz'48
+}
+
+/* !----------------------------Side N!---------------------------- */
+#side-nav {
+     padding-left: 5px;
+     width: 5%;
+     height: calc(100vh);
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 20;
+     transition: 600ms;
+     background: #202020;
+     overflow-x: hidden;
+     overflow-y: scroll;
+}
+
+#side-nav::-webkit-scrollbar {
+     width: 8px;
+}
+
+
+#side-nav::-webkit-scrollbar-thumb {
+     background: rgb(141, 135, 135);
+     border-radius: 10px;
+}
+
+
+.header {
+     background: #202020;
+     position: fixed;
+     z-index: 1300;
+     top: 0;
+     left: -100%;
+     padding-left: 25px;
+     width: 220px;
+     display: flex;
+     z-index: 1600;
+     justify-content: flex-start;
+     align-items: center;
+     display: none;
+     transition: 600ms;
+}
+
+.header .yt-logo {
+     width: 120px;
+     height: 59px;
+     margin: 0;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+
+.header .yt-logo img {
+     width: 100%;
+}
+
+.sidemenu-full {
+     height: calc(100vh-60px);
+     width: 100%;
+     position: relative;
+     top: 60px;
+     z-index: 999;
+     left: 0;
+     transition: 600ms;
+}
+
+.side-menubar {
+     position: relative;
+     width: 100%;
+}
+
+.side-menubar .sidemenu-menu-icon {
+     display: flex;
+     cursor: pointer;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     padding: 12px 5px;
+}
+
+.side-menubar .sidemenu-menu-icon:hover {
+     background: #494848;
+}
+
+.side-menubar div span {
+     cursor: pointer;
+}
+
+.side-menubar div p {
+     cursor: pointer;
+     font-size: 10px;
+     font-weight: 300;
+}
+
+.side-nav-hide {
+     display: none;
+}
+
+.sidemenu-toggle {
+     flex-direction: row !important;
+     justify-content: flex-start !important;
+     padding: 7px 0 !important;
+     padding-left: 23px !important;
+}
+
+.sidemenu-toggle p {
+     font-size: 15px !important;
+     margin-left: 20px;
+     font-weight: 600 !important;
+}
+
+.after {
+     padding: 0 !important;
+     margin: 10px 0;
+     width: 95%;
+     height: 0.1px;
+     background: rgba(237, 208, 208, 0.3);
+}
+
+.side-nav-setting {
+     width: 100%;
+     color: rgb(249, 242, 242);
+     margin-bottom: 20px;
+     display: none;
+}
+
+.side-nav-setting div {
+     position: relative;
+     cursor: pointer;
+     top: 10px;
+     width: 100%;
+     display: flex;
+     padding: 7px 0 !important;
+     padding-left: 23px !important;
+}
+
+.side-nav-setting div p {
+     font-size: 15px;
+     margin-left: 20px;
+     font-weight: 500;
+
+}
+
+.side-nav-setting div:hover {
+     background: #494848;
+}
+
+.side-nav-footer {
+     color: #aaa;
+     padding: 10px 20px;
+     font-size: 13px;
+     font-weight: 600;
+     display: none;
+}
+
+.side-nav-footer p {
+     margin-top: 10px;
+}
+
+.side-nav-footer p:last-child {
+     font-size: 12px;
+}
+
+/* after :double-button */
+/* Fotter */
+/* Side nav setting */
+/* side nav toogle */
+/* side nav full ==> top 0 */
+
+.overlay {
+     width: 100%;
+     height: 100vh;
+     position: absolute;
+     top: 0;
+     z-index: 10;
+     cursor: pointer;
+     display: none;
+     background: #0d0c0c;
+     opacity: 0.3;
+}
+
+
+
+#main-container {
+     /* height: 100vh; */
+     position: relative;
+     left: 5%;
+     width: 95%;
+     height: fit-content;
+     background: #181818;
+     transition: 600ms;
+}
+
+.main-container-header {
+     width: 100%;
+     position: sticky;
+     top: 60px;
+     z-index: 15;
+     background: #202020;
+}
+
+.main-container-header ul {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     border-top: 0.1px solid rgb(126, 124, 124);
+     border-bottom: 0.1px solid rgb(129, 123, 123);
+     overflow: hidden;
+}
+
+.main-container-header ul li {
+     list-style: none;
+     padding: 0 16px 3px;
+     height: 32px;
+     color: white;
+     margin: 12px;
+     margin-left: 0;
+     display: flex;
+     align-items: center;
+     white-space: nowrap;
+     border-radius: 16px;
+     cursor: pointer;
+     background-color: #373737;
+}
+
+.main-container-header ul li:hover {
+     background-color: rgb(71, 67, 67);
+}
+
+#content-container {
+     /* width: 1350px; */
+     width: 100%;
+     padding: 0 20px;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+}
+
+.vedio-container {
+     /* border: 1px solid red; */
+     position: relative;
+     padding: 11px;
+     height: 275px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     overflow: hidden;
+     cursor: pointer;
+}
+
+.vedio-thumbnail {
+     position: relative;
+     width: 100%;
+     overflow: hidden;
+}
+
+.vedio-thumbnail img {
+     width: 100%;
+     height: 140px;
+     transform: scaleY(1.4);
+}
+
+.vedio-duration {
+     background-color: #0d0c0c;
+     color: #fff;
+     border-radius: 5px;
+     position: absolute;
+     bottom: 10px;
+     right: 10px;
+     font-size: 12px;
+     width: fit-content;
+     padding: 2px 4px;
+}
+
+.details {
+     margin-top: 6px;
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     color: white;
+}
+
+.channel-img {
+     width: 20%;
+     margin-right: 7px;
+}
+
+.channel-img img {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+}
+
+.detail-text {
+     width: 100%;
+     word-wrap: break-word;
+}
+
+.detail-text h3 {
+     width: 100%;
+     line-height: 20px;
+     font-size: 14px;
+     font-weight: 500;
+     max-height: 40px;
+     overflow: hidden;
+     white-space: break-spaces;
+     text-overflow: ellipsis;
+}
+
+.channel-name {
+     margin-top: 6px;
+}
+
+.detail-text .channel-name, .detail-text .views {
+     font-size: 12px;
+     color: #747474;
+}
+
+
+/* */
+/* */
